@@ -1,0 +1,81 @@
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+</style>
+
+<div class="content" role="main">
+  <div class="card highlight-card card-small">
+    {{ title1 }}
+  </div>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let lecturer of lecturers">
+        <td>{{ lecturer.id }}</td>
+        <td>{{ lecturer.name }}</td>
+      </tr>
+    </table>
+    <div class="space"></div>
+  </div>
+
+  <div class="card highlight-card card-small">
+    {{ title2 }}
+  </div>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+      <tr *ngFor="let course of course">
+        <td>{{ course.sname }}</td>
+        <td>{{ course.description }}</td>
+      </tr>
+    </table>
+    <div class="space"></div>
+  </div>
+
+  <div class="card highlight-card card-small">
+    {{ title3 }}
+  </div>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let students of students">
+        <td>{{ students.id }}</td>
+        <td>{{ students.name }}</td>
+      </tr>
+    </table>
+    <div class="space"></div>
+  </div>
+
+  <div class="card highlight-card card-small">
+    {{ title4 }}
+  </div>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>Student</th>
+        <th>Score</th>
+        <th>Full_mark</th>
+      </tr>
+      <tr *ngFor="let score of scores">
+        <td>{{ score.student }}</td>
+        <td>{{ score.score }}</td>
+        <td>{{ score.full_mark }}</td>
+      </tr>
+    </table>
+    <div class="space"></div>
+  </div>
+</div>

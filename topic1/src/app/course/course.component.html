@@ -1,0 +1,30 @@
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+</style>
+
+<div class="content" role="main">
+  <div class="card highlight-card card-small">
+    {{ title }}
+  </div>
+  <div>
+    <table style="width:100%">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <!-- <th>Full_mark</th> -->
+      </tr>
+      <tr *ngFor="let course of course">
+        <td>{{ course.sname }}</td>
+        <td>{{ course.description }}</td>
+        <!-- <td>{{ score.full_mark }}</td> -->
+      </tr>
+    </table>
+    <div class="space"></div>
+  </div>
+</div>
